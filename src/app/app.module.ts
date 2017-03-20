@@ -1,3 +1,4 @@
+import { bookRouting } from './app-routing.module';
 import { BookDataService } from './shared/book-data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    bookRouting
   ],
   providers: [
     BookDataService
