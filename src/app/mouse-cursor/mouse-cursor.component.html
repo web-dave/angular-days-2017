@@ -1,0 +1,12 @@
+<p>
+  mouse-cursor works!
+</p>
+  <!--(mousemove)="x = $event.clientX; y = $event.clientY"-->
+<div
+  (mousemove)="onmousemove($event)"
+  style="height: 300px; width: 400px; border: 1px solid #000">
+
+</div>
+<p>
+  X: {{x}} Y: {{y}}
+</p>
